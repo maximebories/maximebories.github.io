@@ -1,29 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>404 - Page not found</title>
-    <meta content="The page you are looking for doesn&#x27;t exist or has been moved." name="description">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta charset="utf-8">
+  <title>Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      line-height: 1.2;
+      margin: 0;
+    }
 
-    <script type="text/javascript" nonce="a6f886caa9cd4ddf819edca1826" src="//local.adguard.org?ts=1641407999390&amp;type=content-script&amp;dmn=www.makereign.com&amp;app=com.apple.Safari&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;uag="></script>
-<script type="text/javascript" nonce="a6f886caa9cd4ddf819edca1826" src="//local.adguard.org?ts=1641407999390&amp;name=AdGuard%20Extra&amp;type=user-script"></script><link href="https://d3e54v103j8qbb.cloudfront.net/css/webflow-https-errors.webflow.css" rel="stylesheet" type="text/css">
+    html {
+      color: #888;
+      display: table;
+      font-family: sans-serif;
+      height: 100%;
+      text-align: center;
+      width: 100%;
+    }
 
-    <link href="https://d3e54v103j8qbb.cloudfront.net/static/designer_favicon.5ea478d03e.png" rel="shortcut icon" type="image/x-icon">
+    body {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 2em auto;
+    }
+
+    h1 {
+      color: #555;
+      font-size: 2em;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 0 auto;
+      width: 280px;
+    }
+
+    @media only screen and (max-width: 280px) {
+
+      body,
+      p {
+        width: 95%;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        margin: 0 0 0.3em;
+      }
+
+    }
+  </style>
 </head>
 
 <body>
-<div class="utility-wrapper">
-    <div class="utility-container">
-        <div class="text-mono">404</div>
-        <div class="utility-content">
-            <h1>Page not found<br></h1>
-            <p>The page you are looking for doesn&#x27;t exist or has been moved.</p>
-        </div>
-        <div></div>
-    </div>
-</div>
+  <h1>Page Not Found</h1>
+  <p>Sorry, but the page you were trying to view does not exist.</p>
 </body>
 
 </html>
+<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
