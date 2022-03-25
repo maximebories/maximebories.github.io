@@ -1,1 +1,1 @@
-console.log('js is created');
+console.log('JS is enabled!');
