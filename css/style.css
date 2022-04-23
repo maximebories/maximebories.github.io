@@ -1,70 +1,112 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,400a;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,200;0,200;1,200&display=swap");
 
 :root {
-	--color-1: #F8A1D7;
-	--color-2: #F8A1D7;
-	--color-3: #F8A1D7;
-	--color-4: #F8A1D7;
-	--color-5: #F8A1D7;
-
+	--color-1: #2463eb;
+	--color-2: #2a9a9f;
+	--color-3: #f1b211;
+	--color-4: #e83611;
+	--color-5: #f9002f;
 }
-html {
-	background: white;
+html,
+body,
+section {
 	block-size: 100%;
-	margin: 0;
-	scroll-behavior: smooth;
+	margin: 0 auto;
+}
+
+html {
+	scroll-snap-type: y mandatory;
 }
 
 body {
 	font-family: "Open Sans", sans-serif !important;
-	font-weight: 400;
-	color: white;
-	margin: 0;
-	background: #F8A1D7;
-	block-size: 100%;
-	// Scroll
-	scroll-snap-type: y proximity;
-	scroll-padding-top: 15vh;
-	overflow-y: scroll;
-  }
-
-section {
-	block-size: 100%;
-	margin: 0 auto;
-	background-color: #F8A1D7;
-	scroll-snap-align: start;
 }
-
 .container {
-	margin: 0 auto;
+	box-sizing: border-box;
+	align-items: flex;
+	flex-direction: column;
+	position: relative;
+	display: flex;
+	width: 80%;
 }
 
 h1 {
-	font-size: 4rem;
+	font: 800 64px Google Sans, sans-serif;
+	letter-spacing: normal;
 	display: block;
+	margin-left: 120px;
 }
 
 h2 {
-	font-size: 1rem;
+	font: 400 32px Google Sans, sans-serif;
 	display: block;
+	margin-left: 120px;
 }
 
 h3 {
-	font-size: 0,5rem;
+	font: 400 14px Google Sans, sans-serif;
 	display: block;
+	margin-left: 120px;
 }
 
-{
-	font-size: 0,2rem;
+h4 {
+	font: 400 16px Google Sans, sans-serif;
 	display: block;
+	margin-left: 120px;
 }
 
 p {
 	display: block;
+	margin-left: 120px;
 }
 
-section:nth-of-type(1) {background: var(--color-1)}
-section:nth-of-type(2) {background: var(--color-2)}
-section:nth-of-type(3) {background: var(--color-3)}
-section:nth-of-type(4) {background: var(--color-4)}
-section:nth-of-type(5) {background: var(--color-5)} 
+section {
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+	align-items: center;
+	justify-content: center;
+    box-sizing: border-box;
+    display: block;
+    border-bottom-color: rgb(229, 231, 235);
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(229, 231, 235);
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-right-color: rgb(229, 231, 235);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color: rgb(229, 231, 235);
+    border-top-style: solid;
+    border-top-width: 0px;
+	border-radius: 0px
+}
+
+section:nth-of-type(1) {
+	color: white;
+	background: var(--color-1);
+}
+
+section:nth-of-type(2) {
+	color: black;
+	background: var(--color-2);
+}
+
+section:nth-of-type(3) {
+	color: white;
+	background: var(--color-3);
+}
+
+section:nth-of-type(4) {
+	color: black;
+	background: var(--color-4);
+}
+section:nth-of-type(5) {
+	color: white;
+	background: var(--color-5);
+}
