@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,200;0,200;1,200&display=swap");
 
 :root {
-	--color-1: #2463eb;
+	--color-1: #F7F7F7;
 	--color-2: #2a9a9f;
 	--color-3: #f1b211;
 	--color-4: #e83611;
@@ -11,23 +11,36 @@ html,
 body,
 section {
 	block-size: 100%;
-	margin: 0 auto;
+	margin: 0;
 }
 
 html {
 	scroll-snap-type: y mandatory;
+	font-family: "Open Sans", sans-serif;
 }
 
 body {
-	font-family: "Open Sans", sans-serif !important;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	grid-gap: 10vmax 10vmin;
+	box-sizing: border-box;
+	color: rgb(2018, 2018, 2018)
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
+
 .container {
+align-content: center
 	box-sizing: border-box;
 	align-items: flex;
-	flex-direction: column;
 	position: relative;
-	display: flex;
+	display: grid;
 	width: 80%;
+	rgb(211, 219, 222);
 }
 
 h1 {
@@ -41,6 +54,7 @@ h2 {
 	font: 400 32px Google Sans, sans-serif;
 	display: block;
 	margin-left: 120px;
+	color: #BCBCBC;
 }
 
 h3 {
