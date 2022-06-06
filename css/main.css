@@ -1,126 +1,65 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,200;0,200;1,200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;0,800;1,200&display=swap');
 
 :root {
-	--color-1: #F7F7F7;
-	--color-2: #2a9a9f;
-	--color-3: #f1b211;
-	--color-4: #e83611;
-	--color-5: #f9002f;
+  --background-color-1: #ef7c8e;
+  --background-color-2: #2a9a9f;
+  --background-color-3: #f1b211;
+  --background-color-4: #8adbea;
+  --background-color-5: #f9002f;
+  --foreground-color: #fff;
 }
+
 html,
 body,
 section {
-	block-size: 100%;
-	margin: 0;
+  block-size: 100%;
 }
 
 html {
-	scroll-snap-type: y mandatory;
-	font-family: "Open Sans", sans-serif;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 body {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-	grid-gap: 10vmax 10vmin;
-	box-sizing: border-box;
-	color: rgb(2018, 2018, 2018)
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+  margin: 0;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 8rem;
+  font-weight: 800;
+  color: var(--foreground-color);
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
-.container {
-align-content: center
-	box-sizing: border-box;
-	align-items: flex;
-	position: relative;
-	display: grid;
-	width: 80%;
-	rgb(211, 219, 222);
-}
-
-h1 {
-	font: 800 64px Google Sans, sans-serif;
-	letter-spacing: normal;
-	display: block;
-	margin-left: 120px;
-}
-
-h2 {
-	font: 400 32px Google Sans, sans-serif;
-	display: block;
-	margin-left: 120px;
-	color: #BCBCBC;
-}
-
-h3 {
-	font: 400 14px Google Sans, sans-serif;
-	display: block;
-	margin-left: 120px;
-}
-
-h4 {
-	font: 400 16px Google Sans, sans-serif;
-	display: block;
-	margin-left: 120px;
-}
-
-p {
-	display: block;
-	margin-left: 120px;
+a {
+  color: inherit;
 }
 
 section {
-	scroll-snap-align: start;
-	scroll-snap-stop: always;
-	align-items: center;
-	justify-content: center;
-    box-sizing: border-box;
-    display: block;
-    border-bottom-color: rgb(229, 231, 235);
-    border-bottom-style: solid;
-    border-bottom-width: 0px;
-    border-image-outset: 0;
-    border-image-repeat: stretch;
-    border-image-slice: 100%;
-    border-image-source: none;
-    border-image-width: 1;
-    border-left-color: rgb(229, 231, 235);
-    border-left-style: solid;
-    border-left-width: 0px;
-    border-right-color: rgb(229, 231, 235);
-    border-right-style: solid;
-    border-right-width: 0px;
-    border-top-color: rgb(229, 231, 235);
-    border-top-style: solid;
-    border-top-width: 0px;
-	border-radius: 0px
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section:nth-of-type(1) {
-	color: white;
-	background: var(--color-1);
+  background: var(--background-color-1);
 }
 
 section:nth-of-type(2) {
-	color: black;
-	background: var(--color-2);
+  background: var(--background-color-2);
 }
 
 section:nth-of-type(3) {
-	color: white;
-	background: var(--color-3);
+  background: var(--background-color-3);
 }
 
 section:nth-of-type(4) {
-	color: black;
-	background: var(--color-4);
+  background: var(--background-color-4);
 }
 section:nth-of-type(5) {
-	color: white;
-	background: var(--color-5);
+  background: var(--background-color-5);
 }
