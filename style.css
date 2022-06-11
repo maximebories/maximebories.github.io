@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;0,800;1,200&display=swap");
+
+:root {
+	--background-color-1: #f8a1d7;
+	--background-color-2: #2a9a9f;
+	--background-color-3: #f1b211;
+	--background-color-4: #8adbea;
+	--background-color-5: #f9002f;
+
+	--foreground-color: #fff;
+}
+
+html {
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: "Open-Sans", sans-serif;
+	font-size: 4rem;
+	font-weight: 800;
+	color: var(--foreground-color);
+	text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+		0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+		0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+		0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+		0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+a {
+	color: inherit;
+}
+
+section {
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+	display: inline-flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+}
+
+section:nth-of-type(1) {
+	background: var(--background-color-1);
+}
+
+section:nth-of-type(2) {
+	background: var(--background-color-2);
+}
+
+section:nth-of-type(3) {
+	background: var(--background-color-3);
+}
+
+section:nth-of-type(4) {
+	background: var(--background-color-4);
+}
+section:nth-of-type(5) {
+	background: var(--background-color-5);
+}
+
+.splitter {
+	flex-basis: 30vw;
+}
+
+/* More on custom scrollbars at https://ishadeed.com/article/custom-scrollbars-css/ */
+
+::-webkit-scrollbar {
+	width: 24px;
+}
+
+::-webkit-scrollbar-track {
+	background: #384e85;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #9aadfd;
+}
+
+::-moz-range-track {
+	width: 24px;
+}
+
+::-moz-scrollbar-track {
+	background: #384e85;
+}
+
+::-moz-scrollbar-thumb {
+	background: #9aadfd;
+}
+
+h1 {
+	-webkit-text-size-adjust: 60%;
+}
