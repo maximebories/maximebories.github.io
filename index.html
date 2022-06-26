@@ -15,7 +15,7 @@
 	<meta http-equiv="Pragma" content="no-cache" />
 	<meta http-equiv="Expires" content="0" />
 
-	<script>
+	<script> // Obsolite, export & delete
 		async;
 		src = "https://www.googletagmanager.com/gtag/js?id=G-Q3XLVNW97Y";
 		window.dataLayer = window.dataLayer || [];
@@ -26,7 +26,17 @@
 		gtag("config", "G-Q3XLVNW97Y");
 	</script>
 	<script defer data-domain="maximebori.es" src="https://plausible.io/js/plausible.js"></script>
-
+	<script>
+		import FingerprintJS from '@fingerprintjs/fingerprintjs-pro'
+		// Init
+		const fpPromise = FingerprintJS.load({
+			apiKey: 'CQLgN4W1f6ipa992LUZs', region: 'eu' // RGPD coompliance
+		})
+		// Get some ID
+		fpPromise
+			.then(fp => fp.get())
+			.then(result => console.log(result.visitorId))
+	</script>
 </head>
 
 <body>
