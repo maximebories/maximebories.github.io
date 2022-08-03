@@ -1,7 +1,7 @@
 @font-face {
     font-family: Platform Web;
-    src: url(https://www.maximebori.es/fonts/Platform-BoldItalic.eot);
-    src: url(https://www.maximebori.es/fonts/Platform-BoldItalic.eot?#iefix) format("embedded-opentype"), url(https://www.maximebori.es/fonts/Platform-BoldItalic.woff2) format("woff2"), url(https://www.maximebori.es/fonts/Platform-BoldItalic.woff) format("woff");
+    src: url(../fonts/Platform-BoldItalic.eot);
+    src: url(../fonts/Platform-BoldItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-BoldItalic.woff2) format("woff2"), url(../fonts/Platform-BoldItalic.woff) format("woff");
     font-weight: 700;
     font-style: italic;
     font-stretch: normal
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: Platform Web;
-    src: url(https://www.maximebori.es/fonts/Platform-Bold.eot);
-    src: url(https://www.maximebori.es/fonts/Platform-Bold.eot?#iefix) format("embedded-opentype"), url(https://www.maximebori.es/fonts/Platform-Bold.woff2) format("woff2"), url(https://www.maximebori.es/fonts/Platform-Bold.woff) format("woff");
+    src: url(../fonts/Platform-Bold.eot);
+    src: url(../fonts/Platform-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-Bold.woff2) format("woff2"), url(../fonts/Platform-Bold.woff) format("woff");
     font-weight: 700;
     font-style: normal;
     font-stretch: normal
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: Platform Web;
-    src: url(https://www.maximebori.es/fonts/Platform-MediumItalic.eot);
-    src: url(https://www.maximebori.es/fonts/Platform-MediumItalic.eot?#iefix) format("embedded-opentype"), url(https://www.maximebori.es/fonts/Platform-MediumItalic.woff2) format("woff2"), url(https://www.maximebori.es/fonts/Platform-MediumItalic.woff) format("woff");
+    src: url(../fonts/Platform-MediumItalic.eot);
+    src: url(../fonts/Platform-MediumItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-MediumItalic.woff2) format("woff2"), url(../fonts/Platform-MediumItalic.woff) format("woff");
     font-weight: 500;
     font-style: italic;
     font-stretch: normal
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: Platform Web;
-    src: url(https://www.maximebori.es/fonts/Platform-Medium.eot);
-    src: url(https://www.maximebori.es/fonts/Platform-Medium.eot?#iefix) format("embedded-opentype"), url(https://www.maximebori.es/fonts/Platform-Medium.woff2) format("woff2"), url(https://www.maximebori.es/fonts/Platform-Medium.woff) format("woff");
+    src: url(../fonts/Platform-Medium.eot);
+    src: url(../fonts/Platform-Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-Medium.woff2) format("woff2"), url(../fonts/Platform-Medium.woff) format("woff");
     font-weight: 500;
     font-style: normal;
     font-stretch: normal
@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: Platform Web;
-    src: url(https://www.maximebori.es/fonts/Platform-RegularItalic.eot);
-    src: url(https://www.maximebori.es/fonts/Platform-RegularItalic.eot?#iefix) format("embedded-opentype"), url(https://www.maximebori.es/fonts/Platform-RegularItalic.woff2) format("woff2"), url(https://www.maximebori.es/fonts/Platform-RegularItalic.woff) format("woff");
+    src: url(../fonts/Platform-RegularItalic.eot);
+    src: url(../fonts/Platform-RegularItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-RegularItalic.woff2) format("woff2"), url(../fonts/Platform-RegularItalic.woff) format("woff");
     font-weight: 400;
     font-style: italic;
     font-stretch: normal
@@ -45,8 +45,8 @@
 
 @font-face {
     font-family: Platform Web;
-    src: url(https://www.maximebori.es/fonts/Platform-Regular.eot);
-    src: url(https://www.maximebori.es/fonts/Platform-Regular.eot?#iefix) format("embedded-opentype"), url(https://www.maximebori.es/fonts/Platform-Regular.woff2) format("woff2"), url(https://www.maximebori.es/fonts/Platform-Regular.woff) format("woff");
+    src: url(../fonts/Platform-Regular.eot);
+    src: url(../fonts/Platform-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-Regular.woff2) format("woff2"), url(../fonts/Platform-Regular.woff) format("woff");
     font-weight: 400;
     font-style: normal;
     font-stretch: normal
@@ -54,8 +54,8 @@
 
 @font-face {
     font-family: Platform Web;
-    src: url(https://www.maximebori.es/fonts/Platform-LightItalic.eot);
-    src: url(https://www.maximebori.es/fonts/Platform-LightItalic.eot?#iefix) format("embedded-opentype"), url(https://www.maximebori.es/fonts/Platform-LightItalic.woff2) format("woff2"), url(https://www.maximebori.es/fonts/Platform-LightItalic.woff) format("woff");
+    src: url(../fonts/Platform-LightItalic.eot);
+    src: url(../fonts/Platform-LightItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-LightItalic.woff2) format("woff2"), url(../fonts/Platform-LightItalic.woff) format("woff");
     font-weight: 300;
     font-style: italic;
     font-stretch: normal
@@ -63,8 +63,8 @@
 
 @font-face {
     font-family: Platform Web;
-    src: url(https://www.maximebori.es/fonts/Platform-Light.eot);
-    src: url(https://www.maximebori.es/fonts/Platform-Light.eot?#iefix) format("embedded-opentype"), url(https://www.maximebori.es/fonts/Platform-Light.woff2) format("woff2"), url(https://www.maximebori.es/fonts/Platform-Light.woff) format("woff");
+    src: url(../fonts/Platform-Light.eot);
+    src: url(../fonts/Platform-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-Light.woff2) format("woff2"), url(../fonts/Platform-Light.woff) format("woff");
     font-weight: 300;
     font-style: normal;
     font-stretch: normal
@@ -72,8 +72,8 @@
 
 @font-face {
     font-family: Platform Web;
-    src: url(https://www.maximebori.es/fonts/Platform-HairlineItalic.eot);
-    src: url(https://www.maximebori.es/fonts/Platform-HairlineItalic.eot?#iefix) format("embedded-opentype"), url(https://www.maximebori.es/fonts/Platform-HairlineItalic.woff2) format("woff2"), url(https://www.maximebori.es/fonts/Platform-HairlineItalic.woff) format("woff");
+    src: url(../fonts/Platform-HairlineItalic.eot);
+    src: url(../fonts/Platform-HairlineItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-HairlineItalic.woff2) format("woff2"), url(../fonts/Platform-HairlineItalic.woff) format("woff");
     font-weight: 100;
     font-style: italic;
     font-stretch: normal
@@ -81,8 +81,8 @@
 
 @font-face {
     font-family: Platform Web;
-    src: url(https://www.maximebori.es/fonts/Platform-Hairline.eot);
-    src: url(https://www.maximebori.es/fonts/Platform-Hairline.eot?#iefix) format("embedded-opentype"), url(https://www.maximebori.es/fonts/Platform-Hairline.woff2) format("woff2"), url(https://www.maximebori.es/fonts/Platform-Hairline.woff) format("woff");
+    src: url(../fonts/Platform-Hairline.eot);
+    src: url(../fonts/Platform-Hairline.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-Hairline.woff2) format("woff2"), url(../fonts/Platform-Hairline.woff) format("woff");
     font-weight: 100;
     font-style: normal;
     font-stretch: normal
