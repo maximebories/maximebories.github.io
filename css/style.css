@@ -1,14 +1,5 @@
 @font-face {
     font-family: Platform Web;
-    src: url(../fonts/Platform-BoldItalic.eot);
-    src: url(../fonts/Platform-BoldItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-BoldItalic.woff2) format("woff2"), url(../fonts/Platform-BoldItalic.woff) format("woff");
-    font-weight: 700;
-    font-style: italic;
-    font-stretch: normal
-}
-
-@font-face {
-    font-family: Platform Web;
     src: url(../fonts/Platform-Bold.eot);
     src: url(../fonts/Platform-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-Bold.woff2) format("woff2"), url(../fonts/Platform-Bold.woff) format("woff");
     font-weight: 700;
@@ -18,72 +9,9 @@
 
 @font-face {
     font-family: Platform Web;
-    src: url(../fonts/Platform-MediumItalic.eot);
-    src: url(../fonts/Platform-MediumItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-MediumItalic.woff2) format("woff2"), url(../fonts/Platform-MediumItalic.woff) format("woff");
-    font-weight: 500;
-    font-style: italic;
-    font-stretch: normal
-}
-
-@font-face {
-    font-family: Platform Web;
-    src: url(../fonts/Platform-Medium.eot);
-    src: url(../fonts/Platform-Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-Medium.woff2) format("woff2"), url(../fonts/Platform-Medium.woff) format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal
-}
-
-@font-face {
-    font-family: Platform Web;
-    src: url(../fonts/Platform-RegularItalic.eot);
-    src: url(../fonts/Platform-RegularItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-RegularItalic.woff2) format("woff2"), url(../fonts/Platform-RegularItalic.woff) format("woff");
-    font-weight: 400;
-    font-style: italic;
-    font-stretch: normal
-}
-
-@font-face {
-    font-family: Platform Web;
-    src: url(../fonts/Platform-Regular.eot);
-    src: url(../fonts/Platform-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-Regular.woff2) format("woff2"), url(../fonts/Platform-Regular.woff) format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal
-}
-
-@font-face {
-    font-family: Platform Web;
-    src: url(../fonts/Platform-LightItalic.eot);
-    src: url(../fonts/Platform-LightItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-LightItalic.woff2) format("woff2"), url(../fonts/Platform-LightItalic.woff) format("woff");
-    font-weight: 300;
-    font-style: italic;
-    font-stretch: normal
-}
-
-@font-face {
-    font-family: Platform Web;
     src: url(../fonts/Platform-Light.eot);
     src: url(../fonts/Platform-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-Light.woff2) format("woff2"), url(../fonts/Platform-Light.woff) format("woff");
     font-weight: 300;
-    font-style: normal;
-    font-stretch: normal
-}
-
-@font-face {
-    font-family: Platform Web;
-    src: url(../fonts/Platform-HairlineItalic.eot);
-    src: url(../fonts/Platform-HairlineItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-HairlineItalic.woff2) format("woff2"), url(../fonts/Platform-HairlineItalic.woff) format("woff");
-    font-weight: 100;
-    font-style: italic;
-    font-stretch: normal
-}
-
-@font-face {
-    font-family: Platform Web;
-    src: url(../fonts/Platform-Hairline.eot);
-    src: url(../fonts/Platform-Hairline.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-Hairline.woff2) format("woff2"), url(../fonts/Platform-Hairline.woff) format("woff");
-    font-weight: 100;
     font-style: normal;
     font-stretch: normal
 }
@@ -109,41 +37,11 @@ time {
     border: 0;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline
-}
-
-section {
-    display: block
+    vertical-align: baseline;
 }
 
 body {
     line-height: 1
-}
-
-q {
-    quotes: none
-}
-
-q:after,
-q:before {
-    content: "";
-    content: none
-}
-
-[role=button] {
-    box-sizing: content-box
-}
-
-[role=button] {
-    color: inherit;
-    cursor: default;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    white-space: pre;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none
 }
 
 .bg-light-purple {
@@ -188,34 +86,12 @@ body {
     color: #fff
 }
 
-@media only screen and (max-width:640px) {
-    body {
-        font-size: 20px
-    }
-}
-
-h1 {
-    font-size: 4em
-}
-
-h1,
 h2 {
-    font-family: Platform Web;
-    font-weight: 700;
-    font-style: normal;
-    font-stretch: normal
-}
-
-h2 {
-    font-size: 2.5em
-}
-
-h3 {
     font-family: Platform Web;
     font-weight: 700;
     font-style: normal;
     font-stretch: normal;
-    font-size: 1.75em
+    font-size: 2.5em;
 }
 
 p {
@@ -225,22 +101,12 @@ p {
     position: relative
 }
 
-@media only screen and (max-width:640px) {
-    p {
-        font-weight: 400
-    }
-}
-
 a {
     font-weight: 700;
     color: #fff;
     letter-spacing: .5px;
     text-decoration: none;
     display: inline-block
-}
-
-a:hover {
-    cursor: pointer
 }
 
 img {
@@ -254,60 +120,6 @@ img {
     width: 100%;
     position: relative;
     overflow: hidden
-}
-
-@media only screen and (max-width:640px) {
-    .section {
-        height: 100%;
-        width: 100%;
-        min-height: 500px
-    }
-}
-
-.section-centered {
-    text-align: center
-}
-
-.section-centered h1 {
-    margin-bottom: 20px
-}
-
-.section-centered p {
-    margin-bottom: 60px
-}
-
-.section-centered .section-contents {
-    display: block
-}
-
-@media only screen and (max-width:640px) {
-    .section-centered h1 {
-        margin-bottom: 10px
-    }
-
-    .section-centered p {
-        margin-bottom: 60px
-    }
-}
-
-@media only screen and (max-width:375px) {
-    .section-centered h1 {
-        font-size: 3.5em
-    }
-}
-
-@media only screen and (max-width:374px) {
-    .section-centered h1 {
-        font-size: 2.5em
-    }
-
-    .section-centered h2 {
-        font-size: 1.75em
-    }
-
-    .section-centered p {
-        margin-bottom: 40px
-    }
 }
 
 .section-contents {
@@ -326,15 +138,6 @@ img {
     align-items: center
 }
 
-@media only screen and (max-width:640px) {
-    .section-contents {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column
-    }
-}
-
 .contents-left {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
@@ -343,43 +146,11 @@ img {
     max-width: 440px
 }
 
-.contents-left h2 {
-    margin-bottom: 40px
-}
-
-@media only screen and (max-width:640px) {
-    .contents-left {
-        margin: 60px;
-        margin-bottom: 30px
-    }
-
-    .contents-left h2 {
-        margin-bottom: 20px
-    }
-}
-
 .contents-right {
     position: relative;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 500px;
     flex: 0 0 500px
-}
-
-@media only screen and (max-width:640px) {
-    .contents-right {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 300px;
-        flex: 0 0 300px;
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto 80px
-    }
-}
-
-@media only screen and (max-width:640px) {
-    .contents-centered {
-        margin: 0 auto
-    }
 }
 
 .contents-centered {

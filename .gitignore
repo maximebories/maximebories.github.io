@@ -2,3 +2,10 @@
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 # Useful .gitignore templates: https://github.com/github/gitignore
 .DS_Store
+css3-timeline/dist/index.html
+css3-timeline/dist/prefixfree.min.js
+css3-timeline/dist/style.css
+css3-timeline/LICENSE.txt
+css3-timeline/README.md
+css3-timeline/src/index.html
+css3-timeline/src/style.sass

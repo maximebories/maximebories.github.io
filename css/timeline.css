@@ -1,0 +1,116 @@
+
+#curiculum {
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 40px;;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #b2e4c6;
+  overflow: hidden;
+}
+
+#curiculum h2 {
+  margin: 1rem;
+}
+
+#curiculum .work p{
+  top:8px;
+  left:-29px;
+ }
+
+ .timeline {
+  list-style: none;
+  margin: 50px 0 30px 120px;
+  padding-left: 30px;
+  border-left: 8px solid #fff;
+}
+.timeline li {
+  margin: 40px 0;
+  position: relative;
+}
+.timeline p {
+  margin: auto;
+}
+
+.date {
+  left: -160px;
+  font-size: 1em;
+  position: absolute;
+}
+
+.circle {
+  left: -44px;
+  width: 10px;
+  height: 10px;
+  background: #b2e4c6;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+.description {
+  padding: 2rem;
+  position: relative;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.2em;
+  position: absolute;
+}
+
+/* -------------------------------------
+ * mobile phones (vertical version only)
+ * ------------------------------------- */
+@media screen and (max-width: 767px) {
+  .timeline {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+  .timeline li {
+    margin: 50px 0;
+  }
+
+  label {
+    width: 85%;
+    font-size: 1.1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    transform: translateX(18px);
+  }
+
+  .content {
+    padding-top: 45px;
+    border-color: #eee9dc;
+  }
+  .content:before, .content:after {
+    border: solid transparent;
+    bottom: 100%;
+  }
+  .content:before {
+    border-bottom-color: inherit;
+    border-width: 17px;
+    top: -16px;
+    left: 50px;
+    margin-left: -17px;
+  }
+  .content:after {
+    border-bottom-color: #48b379;
+    border-width: 20px;
+    top: -20px;
+    left: 50px;
+    margin-left: -20px;
+  }
+  .content p {
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  .circle, .date {
+    display: none;
+  }
+}
