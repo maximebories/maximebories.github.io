@@ -109,6 +109,14 @@ a {
     display: inline-block
 }
 
+#ico {
+    position: fixed;
+    top: 1.5em;
+    left: 1.5em;
+    z-index: 100;
+    pointer-events: none
+}
+
 img {
     width: 100%
 }
