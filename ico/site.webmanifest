@@ -1,6 +1,6 @@
 {
-  "short_name": "Maxime Bories",
-  "name": "Maxime's Spot in the far far away sides of the internets - Maxime Bories",
+  "name": "",
+  "short_name": "",
   "icons": [
     {
       "src": "ico/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/",
-  "background_color": "#da532c",
-  "theme_color": "#da532c"
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
 }
