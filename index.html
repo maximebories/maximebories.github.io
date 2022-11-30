@@ -12,9 +12,12 @@
 		<script defer data-domain="maximebori.es" src="https://plausible.io/js/plausible.js"></script>
 		<script>
 			const fpPromise = import('https://fpjscdn.net/v3/CQLgN4W1f6ipa992LUZs')
-			.then(FingerprintJS => FingerprintJS.load())
+			.then(FingerprintJS => FingerprintJS.load({
+				region: "eu",
+				endpoint: "https://metrics.maximebori.es"
+				}))
 			fpPromise
-			.then(fp => fp.get())
+			.then(fpAgent => fpAgent.get())
 			.then(result => console.log(result.requestId, result.visitorId))
 		</script>
 		<link href="./css/style.css" rel="stylesheet">
