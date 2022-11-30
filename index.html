@@ -11,16 +11,11 @@
 		<meta charset="utf-8">
 		<script defer data-domain="maximebori.es" src="https://plausible.io/js/plausible.js"></script>
 		<script>
-			const fpPromise = import('https://fpcdn.io/v3/CQLgN4W1f6ipa992LUZs')
-				.then(FingerprintJS => FingerprintJS.load({
-					region: "eu"
-				}))
+			const fpPromise = import('https://fpjscdn.net/v3/CQLgN4W1f6ipa992LUZs')
+			.then(FingerprintJS => FingerprintJS.load())
 			fpPromise
-				.then(fp => fp.get())
-				.then(result => {
-					const visitorId = result.visitorId
-					console.log(visitorId)
-				})
+			.then(fp => fp.get())
+			.then(result => console.log(result.requestId, result.visitorId))
 		</script>
 		<link href="./css/style.css" rel="stylesheet">
 		<link href="./css/timeline.css" rel="stylesheet">
