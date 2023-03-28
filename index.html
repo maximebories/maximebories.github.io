@@ -4,20 +4,24 @@
 	<head>
 		<title>Maxime's Spot - Maxime Bories</title>
 
+		<!-- SEO Standards Tags -->
+
 		<!-- Technical Standards Tags -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta http-equiv="Pragma" content="no-cache" />
 		<meta http-equiv="Expires" content="0" />
-		
+
 		<!-- Technical Security Tags -->
 		<meta name="cookies" content="no">
 		<meta name="referrer" content="no-referrer">
 		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fpjscdn.net https://metrics.maximebories.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self';">
-		<meta http-equiv="Content-Security-Policy: default-src "self"; frame-ancestors "none">
-		<meta http-equiv="Public-Key-Pins" content="pin-sha256='base64-encoded-public-key'; pin-sha256='base64-encoded-backup-public-key'; max-age=604800; includeSubDomains">
+		<meta http-equiv="Content-Security-Policy"
+			content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fpjscdn.net https://metrics.maximebories.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self';">
+		<meta http-equiv="Content-Security-Policy: default-src " self"; frame-ancestors "none">
+		<meta http-equiv="Public-Key-Pins"
+			content="pin-sha256='base64-encoded-public-key'; pin-sha256='base64-encoded-backup-public-key'; max-age=604800; includeSubDomains">
 		<meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
 		<meta http-equiv="X-Content-Type-Options" content="nosniff">
 		<meta http-equiv="X-Frame-Options" content="deny">
@@ -46,7 +50,7 @@
 		<!-- Fingerprinting -->
 		<script>
 			const fpPromise = import('https://fpjscdn.net/v3/g0YsBmgW0axFq4DxKY5D')
-				.then(FingerprintJS => FingerprintJS.load({ region: "eu", endpoint: "https://metrics.maximebories.com" }))
+				.then(FingerprintJS => FingerprintJS.load({ region: "eu", endpoint: "https://metrics.maximebories.com" }));
 			fpPromise
 				.then(fpAgent => fpAgent.get())
 				.then(result => console.log(result.requestId, result.visitorId))
@@ -122,10 +126,14 @@
 			<div class="bg-light-blue section">
 				<div class="section-contents">
 					<div class="contents-left">
-						<h2>Nice to meet you</h2>
-						<p>This is my spot in the World Wide Web, an introduction, a portfolio, a blog, a showcase
-							of personnal projects and a sandbox for testing and keeping up to date with WebOps
-							technologies.</p>
+						<h2>Nice to meet you !</h2>
+						<p>I am a Software Developer and Communications and Signal Processing engineer. This is my spot
+							in the World Wide Web, an introduction, a showcase of personnal projects and a sandbox for
+							testing and keeping up to date with WebOps technologies.</p>
+						<p>On this page, you'll find my resume, as well as links to my side projects and Github
+							repositories, where I enjoy ontributing to open source projects. I hold a MSc in
+							Communications and Signal Processing from Imperial College London, and a Diplôme d'Ingénieur
+							in Electronics and Signal Processing from ENSEEIHT.</p>
 					</div>
 					<div class="contents-right">
 
@@ -133,10 +141,10 @@
 				</div>
 			</div>
 			<div class="bg-light-green section">
-				<div id="download">
-					<a href="https://maximebories.com/cv.pdf" target="_blank">
+				<!-- <div id="download">
+					<a href="https://maximebories.com/CV.pdf" target="_blank">
 						<img src="./svg/download.svg" alt="Download">
-					</a>
+					</a> -->
 				<div id="curiculum">
 					<h2>Work Experience</h2>
 					<ul class='timeline'>
@@ -245,53 +253,54 @@
 						</li>
 					</ul>
 				</div>
+				<!-- </div> -->
 			</div>
-		</div>
-		<div class="bg-light-yellow section">
-			<div class="section-contents">
-				<div class="contents-left">
-					<h2>Latest Projects</h2>
-					<p>Parallelism is an everyday struggle... In the meantime feel free to follow me on <a href="https://github.com/maximebories">Github</a>. </p>
-				</div>
-				<div class="contents-right">
-				</div>
-			</div>
-		</div>
-		<div class="bg-light-orange section">
-			<div class="section-contents">
-				<div class="contents-left">
-					<h2>Around The Web</h2>
-					<p>Huh...</p>
-				</div>
-				<div class="contents-right">
+			<div class="bg-light-yellow section">
+				<div class="section-contents">
+					<div class="contents-left">
+						<h2>Latest Projects</h2>
+						<p>Parallelism is an everyday struggle... In the meantime feel free to follow me on <a
+								href="https://github.com/maximebories">Github</a>. </p>
+					</div>
+					<div class="contents-right">
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="bg-light-red section">
-			<div class="section-contents">
-				<div class="contents-left">
-					<h2>Empty slide</h2>
-					<p>Alrigth!</p>
-				</div>
-				<div class="contents-right">
-				</div>
-			</div>
-		</div>
-		<div class="section bg-light-purple">
-			<div class="section-contents">
-				<div class="contents-centered">
-					<h2>Copyright</h2>
-					<p>Unless stated otherwise, none of this work is copyrighted. As such it falls directly in the
-						public domain and you are free to do anything with it. This is not true of Frameworks and
-						APIs that may or may not be in use at the time of your visit.
-					<p>This website is currectly hosted in OVH cloud, a fully static copy of the codebase can be
-						found, forked, reused at will on my <a
-							href="https://github.com/maximebories/maximebories.github.io">github-pages</a>
-						repository and a static copy, with no active backend, can be found at <a
-							href="http://maximebories.github.io">maximebories.github.io</a>.</p>
+			<div class="bg-light-orange section">
+				<div class="section-contents">
+					<div class="contents-left">
+						<h2>Around The Web</h2>
+						<p>Huh...</p>
+					</div>
+					<div class="contents-right">
+					</div>
 				</div>
 			</div>
-		</div>
+			<div class="bg-light-red section">
+				<div class="section-contents">
+					<div class="contents-left">
+						<h2>Empty slide</h2>
+						<p>Alrigth!</p>
+					</div>
+					<div class="contents-right">
+					</div>
+				</div>
+			</div>
+			<div class="section bg-light-purple">
+				<div class="section-contents">
+					<div class="contents-centered">
+						<h2>Copyright</h2>
+						<p>Unless stated otherwise, none of this work is copyrighted. As such it falls directly in the
+							public domain and you are free to do anything with it. This is not true of Frameworks and
+							APIs that may or may not be in use at the time of your visit.
+						<p>This website is currectly hosted in OVH cloud, a fully static copy of the codebase can be
+							found, forked, reused at will on my <a
+								href="https://github.com/maximebories/maximebories.github.io">github-pages</a>
+							repository and a static copy, with no active backend, can be found at <a
+								href="http://maximebories.github.io">maximebories.github.io</a>.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 
 	</body>
