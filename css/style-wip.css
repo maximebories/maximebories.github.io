@@ -1,0 +1,139 @@
+@font-face {
+    font-family: Platform Web;
+    src: url(../fonts/Platform-Bold.eot);
+    src: url(../fonts/Platform-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-Bold.woff2) format("woff2"), url(../fonts/Platform-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: Platform Web;
+    src: url(../fonts/Platform-Light.eot);
+    src: url(../fonts/Platform-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/Platform-Light.woff2) format("woff2"), url(../fonts/Platform-Light.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+a,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+img,
+p,
+q,
+s,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: larger;
+    font-feature-settings: "liga", "kern";
+    line-height: 1.4em;
+    color: #fff;
+}
+
+h2 {
+    font-family: Platform Web;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 2.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1em;
+    position: relative;
+}
+
+a {
+    font-weight: 700;
+    color: #fff;
+}
+
+.section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-light-green {
+    background: #a2d8c0
+}
+
+#curiculum {
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+    max-inline-size: 1080px;
+    ;
+    overflow: hidden;
+}
+
+#curiculum p {
+    top: 1em;
+    left: -2em;
+    text-align: justify;
+}
+
+.timeline {
+    list-style: none;
+    margin: 20px 0 20px 160px;
+    padding-left: 30px;
+    border-left: 8px solid #fff;
+}
+
+.timeline li {
+    position: relative;
+}
+
+.date {
+    left: -9em;
+    text-align: right;
+    position: absolute;
+}
+
+.circle {
+    left: -44px;
+    width: 10px;
+    height: 10px;
+    background: #a2d8c0;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+}
+
+.description {
+    padding: 1em;
+    margin: 1em;
+    position: relative;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.2em;
+    position: absolute;
+}
