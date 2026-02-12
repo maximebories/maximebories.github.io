@@ -1,32 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Maxime's Spot - Maxime Bories</title>
 
-		<!-- Theme: saved preference > OS preference > time-based default -->
-		<script>
-			(function() {
-				var saved = localStorage.getItem('theme');
-				if (saved === 'light' || saved === 'dark') {
-					document.documentElement.setAttribute('data-theme', saved);
-				} else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-					document.documentElement.setAttribute('data-theme', 'light');
-				} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-					document.documentElement.setAttribute('data-theme', 'dark');
-				} else {
-					var h = new Date().getHours();
-					document.documentElement.setAttribute('data-theme', h >= 7 && h < 20 ? 'light' : 'dark');
-				}
-			})();
-		</script>
-
 		<!-- SEO -->
 		<link rel="canonical" href="https://maximebories.com/">
 		<meta name="title" content="Maxime's Spot - Maxime Bories">
 		<meta name="description" content="Software Developer, Digital Designer and Embedded Systems Engineer. MSc in Communications and Signal Processing from Imperial College London, Diplôme d'Ingénieur from ENSEEIHT.">
-		<meta name="keywords" content="Software Developer, Communications and Signal Processing engineer, resume, side projects, Github repositories, open source, MSc, Communications and Signal Processing, Imperial College London, Merit, Diplôme d'Ingénieur, Electronics and Signal Processing, ENSEEIHT, Image and Signal Processing, Communication Theory, Traffic Theory, Network and Web Security, Machine Learning, Computer Vision, Analogue and Digital Electronics, Computer Sciences, Microwave Engineering">
 		<meta name="language" content="English">
 		<meta name="author" content="Maxime Bories">
 
@@ -58,7 +40,7 @@
 		</script>
 
 		<!-- Fonts -->
-		<link rel="preload" href="./fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="./fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 
 		<!-- CSS -->
 		<link href="./css/style.css" rel="stylesheet">
@@ -68,9 +50,9 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
 		<link rel="manifest" href="ico/site.webmanifest">
-		<link rel="mask-icon" href="ico/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="mask-icon" href="ico/safari-pinned-tab.svg" color="#89b4fa">
 		<link rel="shortcut icon" href="ico/favicon.ico">
-		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileColor" content="#11111b">
 		<meta name="msapplication-config" content="ico/browserconfig.xml">
 		<meta name="theme-color" content="#11111b">
 		<link rel="icon" sizes="96x96" href="ico/favicon-96x96.png">
@@ -115,15 +97,7 @@
 			<!-- Hero -->
 			<section class="hero">
 				<div class="container">
-					<div class="hero__top">
-						<h1>Maxime Bories</h1>
-						<nav aria-label="Site">
-							<button class="theme-toggle" type="button" aria-label="Toggle theme">
-								<svg class="icon-sun" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-								<svg class="icon-moon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-							</button>
-						</nav>
-					</div>
+					<h1>Maxime Bories</h1>
 					<p class="hero__subtitle">Software Developer &middot; Digital Designer &amp; Embedded Systems Engineer</p>
 					<p class="hero__intro">This is my spot in the World Wide Web &mdash; an introduction, a portfolio, a showcase of personal projects, and a sandbox for keeping up to date with WebOps technologies.</p>
 				</div>
@@ -139,19 +113,21 @@
 							<p class="timeline__date">2025 &rarr; Today</p>
 							<h3 class="timeline__title">Lightning Location System Sensor Design</h3>
 							<p class="timeline__org">M&eacute;t&eacute;orage</p>
-							<p class="timeline__desc">Designing a from-scratch Lightning Location System (LLS) sensor prototype focused on ultra-precise time-of-arrival measurements. The core is a GNSS-disciplined timing and FPGA-based digital chain, ensuring deterministic clocks, counters, and data paths from acquisition to timestamping. Delivering a research-grade sensor enabling nanosecond-level timestamp accuracy from raw samples to lightning onset detection, with a complete end-to-end acquisition and control pipeline.</p>
+							<svg class="timeline__icon timeline__icon--flash" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--ctp-yellow)" stroke="var(--ctp-peach)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+							<p class="timeline__desc">Designing a from-scratch lightning sensor around a GNSS-disciplined timing and FPGA-based digital chain &mdash; deterministic clocks, counters, and data paths delivering nanosecond-level timestamp accuracy from raw samples to lightning onset detection.</p>
 						</li>
 						<li class="timeline__item">
 							<p class="timeline__date">2016 &rarr; 2023</p>
 							<h3 class="timeline__title">Algorithm Development and Validation</h3>
 							<p class="timeline__org">Thales Alenia Space</p>
-							<p class="timeline__desc">Developed and validated DSP algorithms for military-grade TT&amp;C receivers and emitters onboard space satellites. From FSK/PSK modulation and frequency-hopping spread spectrum to synchronisation chains and secure transmission protocols, I carried the full lifecycle &mdash; design, simulation, coding, and testing &mdash; of custom modem models built to fly.</p>
+							<svg class="timeline__icon timeline__icon--satcom" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--ctp-sapphire)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10a7.31 7.31 0 0 1 10 10Z" fill="var(--ctp-blue)" fill-opacity="0.3"/><path d="m9 15 3-3"/><path d="M17 13a6 6 0 0 0-6-6"/><path d="M21 13A10 10 0 0 0 11 3"/></svg>
+							<p class="timeline__desc">Developed and validated DSP algorithms for security-critical satellite modems &mdash; modulation, spread spectrum, synchronisation, and encrypted protocols. Carried the full lifecycle from design and simulation to coding and testing.</p>
 						</li>
 						<li class="timeline__item">
 							<p class="timeline__date">Summer 2014</p>
 							<h3 class="timeline__title"><a href="https://maximebories.com/Liryc.pdf" target="_blank" rel="noopener noreferrer"><svg class="icon-inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg> Software Developer Intern</a></h3>
 							<p class="timeline__org">LIRYC &mdash; Electrophysiology and Heart Modeling Institute of Bordeaux</p>
-							<p class="timeline__desc">Built the real-time software interface for an MRI-compatible 3D catheter localization system used in cardiac electrophysiology. Skin-surface electrode pairs induce oscillating electrical fields; voltage samples from the catheter tip are digitized and resolved via Fourier decomposition into live 3D coordinates. The Matlab-based interface handles calibration, acquisition, and real-time visualization &mdash; validated in vitro and in vivo, independent of MR scanning sequences.</p>
+							<p class="timeline__desc">Built the real-time software interface for an MRI-compatible 3D catheter localization system. Skin electrodes induce oscillating fields; catheter voltages are resolved via Fourier decomposition into live 3D coordinates for calibration and visualization.</p>
 						</li>
 					</ul>
 				</div>
@@ -167,13 +143,13 @@
 							<p class="timeline__date">End of 2015</p>
 							<h3 class="timeline__title"><a href="https://maximebories.com/MSc_Thesis_Underwater_Vision.pdf" target="_blank" rel="noopener noreferrer"><svg class="icon-inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg> MSc Thesis &mdash; Underwater Vision</a></h3>
 							<p class="timeline__org">Imperial College London</p>
-							<p class="timeline__desc">Underwater cameras suffer from murky water &mdash; light gets absorbed and scattered, leaving images with low contrast, colour distortion, and near-field lighting artefacts. I explored ways to undo that damage in software, starting with classical image processing and moving to a physics-based model that estimates scene radiance and albedo to restore visibility in artificially lit underwater scenes.</p>
+							<p class="timeline__desc">Restoring visibility in underwater imagery &mdash; from classical image processing to a physics-based model estimating scene radiance and albedo to undo absorption, scattering, and lighting artefacts.</p>
 						</li>
 						<li class="timeline__item timeline__item--accent">
 							<p class="timeline__date">End of 2014</p>
 							<h3 class="timeline__title">Second Year Research Project</h3>
 							<p class="timeline__org">ENSEEIHT</p>
-							<p class="timeline__desc">Detecting changes across multi-sensor satellite imagery &mdash; infrared, optical, and SAR. Applied wavelet-based preprocessing and multivariate statistical analysis to identify clusters of change between acquisitions.</p>
+							<p class="timeline__desc">Change detection across infrared, optical, and SAR satellite imagery using wavelet preprocessing and multivariate statistical analysis.</p>
 						</li>
 					</ul>
 				</div>
@@ -188,17 +164,17 @@
 						<li class="timeline__item timeline__item--green">
 							<p class="timeline__date">2014 &rarr; 2015</p>
 							<h3 class="timeline__title">Imperial College London</h3>
-							<p class="timeline__desc">MSc in Communications and Signal Processing, Merit. Studied how signals carry information and how machines interpret what they see &mdash; from communication theory and traffic modelling to image processing, machine learning, and computer vision, with a grounding in network and web security.</p>
+							<p class="timeline__desc">MSc in Communications and Signal Processing, Merit. Communication theory, image processing, machine learning, computer vision, and network security.</p>
 						</li>
 						<li class="timeline__item timeline__item--green">
 							<p class="timeline__date">2012 &rarr; 2015</p>
 							<h3 class="timeline__title">ENSEEIHT</h3>
-							<p class="timeline__desc">Dipl&ocirc;me d&rsquo;Ing&eacute;nieur in Electronics and Signal Processing. A broad engineering curriculum spanning analogue and digital electronics, signal and image processing, computer science, and microwave engineering &mdash; bridging the gap between physics and software.</p>
+							<p class="timeline__desc">Dipl&ocirc;me d&rsquo;Ing&eacute;nieur in Electronics and Signal Processing. Analogue and digital electronics, signal and image processing, computer science, and microwave engineering.</p>
 						</li>
 						<li class="timeline__item timeline__item--green">
 							<p class="timeline__date">2010 &rarr; 2012</p>
 							<h3 class="timeline__title">Lycée Pierre de Fermat</h3>
-							<p class="timeline__desc">Two-year intensive preparatory programme in mathematics, physics, and engineering sciences &mdash; the traditional French gateway to grandes &eacute;coles.</p>
+							<p class="timeline__desc">Two-year intensive preparatory programme in mathematics, physics, and engineering sciences.</p>
 						</li>
 					</ul>
 				</div>
@@ -236,14 +212,5 @@
 			</div>
 		</footer>
 
-		<!-- Theme toggle logic -->
-		<script>
-			document.querySelector('.theme-toggle').addEventListener('click', function() {
-				var current = document.documentElement.getAttribute('data-theme');
-				var next = current === 'dark' ? 'light' : 'dark';
-				document.documentElement.setAttribute('data-theme', next);
-				localStorage.setItem('theme', next);
-			});
-		</script>
 	</body>
 </html>

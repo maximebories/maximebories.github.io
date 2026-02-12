@@ -1,62 +1,30 @@
 /* ===================================================================
    Catppuccin-themed Portfolio — css/style.css
-   Mocha (dark) + Latte (light) with data-theme toggle
+   Catppuccin Mocha
    Palette: https://github.com/catppuccin/catppuccin
    =================================================================== */
 
-/* --- Fonts (self-hosted IBM Plex Sans, latin) --------------------- */
+/* --- Fonts (self-hosted Inter, latin) ------------------------------ */
 
 @font-face {
-	font-family: "IBM Plex Sans";
-	src: url(../fonts/ibm-plex-sans-latin-300-normal.woff2) format("woff2");
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "IBM Plex Sans";
-	src: url(../fonts/ibm-plex-sans-latin-300-italic.woff2) format("woff2");
-	font-weight: 300;
-	font-style: italic;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "IBM Plex Sans";
-	src: url(../fonts/ibm-plex-sans-latin-400-normal.woff2) format("woff2");
+	font-family: "Inter";
+	src: url(../fonts/inter-latin-400-normal.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "IBM Plex Sans";
-	src: url(../fonts/ibm-plex-sans-latin-400-italic.woff2) format("woff2");
-	font-weight: 400;
-	font-style: italic;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "IBM Plex Sans";
-	src: url(../fonts/ibm-plex-sans-latin-500-normal.woff2) format("woff2");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "IBM Plex Sans";
-	src: url(../fonts/ibm-plex-sans-latin-700-normal.woff2) format("woff2");
+	font-family: "Inter";
+	src: url(../fonts/inter-latin-700-normal.woff2) format("woff2");
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }
 
-/* --- Catppuccin Mocha (dark) -------------------------------------- */
+/* --- Catppuccin Mocha --------------------------------------------- */
 
-[data-theme="dark"] {
+:root {
 	--ctp-rosewater: #f5e0dc;
 	--ctp-flamingo:  #f2cdcd;
 	--ctp-pink:      #f5c2e7;
@@ -84,38 +52,6 @@
 	--ctp-base:      #1e1e2e;
 	--ctp-mantle:    #181825;
 	--ctp-crust:     #11111b;
-}
-
-/* --- Catppuccin Latte (light) ------------------------------------- */
-
-[data-theme="light"] {
-	--ctp-rosewater: #dc8a78;
-	--ctp-flamingo:  #dd7878;
-	--ctp-pink:      #ea76cb;
-	--ctp-mauve:     #8839ef;
-	--ctp-red:       #d20f39;
-	--ctp-maroon:    #e64553;
-	--ctp-peach:     #fe640b;
-	--ctp-yellow:    #df8e1d;
-	--ctp-green:     #40a02b;
-	--ctp-teal:      #179299;
-	--ctp-sky:       #04a5e5;
-	--ctp-sapphire:  #209fb5;
-	--ctp-blue:      #1e66f5;
-	--ctp-lavender:  #7287fd;
-
-	--ctp-text:      #4c4f69;
-	--ctp-subtext1:  #5c5f77;
-	--ctp-subtext0:  #6c6f85;
-	--ctp-overlay2:  #7c7f93;
-	--ctp-overlay1:  #8c8fa1;
-	--ctp-overlay0:  #9ca0b0;
-	--ctp-surface2:  #acb0be;
-	--ctp-surface1:  #bcc0cc;
-	--ctp-surface0:  #ccd0da;
-	--ctp-base:      #eff1f5;
-	--ctp-mantle:    #e6e9ef;
-	--ctp-crust:     #dce0e8;
 }
 
 /* --- Utilities ---------------------------------------------------- */
@@ -162,10 +98,6 @@
 	outline-offset: 2px;
 }
 
-.theme-toggle:focus-visible {
-	outline-offset: 0;
-}
-
 /* --- Reset -------------------------------------------------------- */
 
 *,
@@ -183,13 +115,15 @@ html {
 }
 
 body {
-	font-family: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+	font-family: "Inter", system-ui, -apple-system, sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 1.6;
 	color: var(--ctp-text);
 	background-color: var(--ctp-base);
-	transition: color 0.3s, background-color 0.3s;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-synthesis: none;
 }
 
 /* --- Typography --------------------------------------------------- */
@@ -248,44 +182,6 @@ section + section {
 }
 
 
-/* --- Theme toggle ------------------------------------------------- */
-
-.theme-toggle {
-	background: none;
-	border: 2px solid var(--ctp-surface1);
-	border-radius: 8px;
-	cursor: pointer;
-	padding: 0.35rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: var(--ctp-subtext0);
-	transition: color 0.2s, border-color 0.2s;
-}
-
-.theme-toggle:hover {
-	color: var(--ctp-text);
-	border-color: var(--ctp-surface2);
-}
-
-.theme-toggle svg {
-	width: 18px;
-	height: 18px;
-}
-
-.theme-toggle .icon-sun,
-.theme-toggle .icon-moon {
-	display: none;
-}
-
-[data-theme="dark"] .theme-toggle .icon-sun {
-	display: block;
-}
-
-[data-theme="light"] .theme-toggle .icon-moon {
-	display: block;
-}
-
 /* --- Hero --------------------------------------------------------- */
 
 .hero {
@@ -300,12 +196,6 @@ section:nth-of-type(odd) {
 
 .hero + section {
 	border-top: 1px solid var(--ctp-surface0);
-}
-
-.hero__top {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 }
 
 .hero h1 {
@@ -352,7 +242,6 @@ section:nth-of-type(odd) {
 	bottom: 0.5rem;
 	width: 2px;
 	background-color: var(--ctp-surface1);
-	transition: background-color 0.3s;
 }
 
 .timeline__item {
@@ -368,13 +257,12 @@ section:nth-of-type(odd) {
 	content: "";
 	position: absolute;
 	left: -2rem;
-	top: 0.55rem;
+	top: 0.25rem;
 	width: 12px;
 	height: 12px;
 	border-radius: 50%;
 	border: 2px solid var(--ctp-blue);
 	background-color: var(--ctp-base);
-	transition: border-color 0.3s, background-color 0.3s;
 	z-index: 1;
 }
 
@@ -428,6 +316,12 @@ section:nth-of-type(odd) {
 	line-height: 1.5;
 }
 
+/* --- Timeline floating icons (disabled) --------------------------- */
+
+.timeline__icon {
+	display: none;
+}
+
 /* --- Links / CTA section ------------------------------------------ */
 
 .links-section {
@@ -447,7 +341,6 @@ section:nth-of-type(odd) {
 	font-weight: 700;
 	font-size: 0.9rem;
 	color: var(--ctp-text);
-	transition: border-color 0.2s, background-color 0.2s;
 }
 
 .link-card:hover {
@@ -469,7 +362,6 @@ section:nth-of-type(odd) {
 	padding: 2.5rem 0;
 	border-top: 1px solid var(--ctp-surface0);
 	background-color: var(--ctp-crust);
-	transition: background-color 0.3s, border-color 0.3s;
 }
 
 .site-footer p {
@@ -497,6 +389,79 @@ section:nth-of-type(odd) {
 .footer-links a {
 	font-size: 0.85rem;
 	font-weight: 700;
+}
+
+/* --- Animations --------------------------------------------------- */
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(1rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes pulse {
+	0%, 100% { box-shadow: 0 0 0 0 var(--ctp-blue); }
+	50%      { box-shadow: 0 0 0 4px transparent; }
+}
+
+@keyframes float {
+	0%, 100% { transform: translate(0, 0); }
+	25%      { transform: translate(2px, -3px); }
+	50%      { transform: translate(-1px, -5px); }
+	75%      { transform: translate(-3px, -2px); }
+}
+
+@keyframes flash {
+	0%, 80%, 100% { opacity: 0.5; }
+	85%           { opacity: 1; }
+	88%           { opacity: 0.3; }
+	92%           { opacity: 0.9; }
+}
+
+/* Hero entrance */
+
+.hero h1 {
+	animation: fadeInUp 0.5s ease-out backwards;
+}
+
+.hero__subtitle {
+	animation: fadeInUp 0.5s ease-out 0.1s backwards;
+}
+
+.hero__intro {
+	animation: fadeInUp 0.5s ease-out 0.2s backwards;
+}
+
+/* Scroll-driven timeline reveal */
+
+@supports (animation-timeline: view()) {
+	.timeline__item {
+		animation: fadeInUp 0.5s ease both;
+		animation-timeline: view();
+		animation-range: entry 0% entry 30%;
+	}
+}
+
+/* Link card lift */
+
+.link-card {
+	transition: border-color 0.2s, background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.link-card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Current-job dot pulse */
+
+#experience .timeline__item:first-child::before {
+	animation: pulse 2s ease-in-out infinite;
 }
 
 /* --- Responsive --------------------------------------------------- */
@@ -534,5 +499,17 @@ section:nth-of-type(odd) {
 
 	.link-card {
 		justify-content: center;
+	}
+}
+
+/* --- Reduced motion ----------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
 	}
 }
