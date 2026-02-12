@@ -1,46 +1,54 @@
-<doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Maxime's Spot - Maxime Bories</title>
 
-		<!-- SEO Standards Tags -->
+		<!-- Theme: saved preference > OS preference > time-based default -->
+		<script>
+			(function() {
+				var saved = localStorage.getItem('theme');
+				if (saved === 'light' || saved === 'dark') {
+					document.documentElement.setAttribute('data-theme', saved);
+				} else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+					document.documentElement.setAttribute('data-theme', 'light');
+				} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+					document.documentElement.setAttribute('data-theme', 'dark');
+				} else {
+					var h = new Date().getHours();
+					document.documentElement.setAttribute('data-theme', h >= 7 && h < 20 ? 'light' : 'dark');
+				}
+			})();
+		</script>
+
+		<!-- SEO -->
+		<link rel="canonical" href="https://maximebories.com/">
 		<meta name="title" content="Maxime's Spot - Maxime Bories">
-		<meta name="description" content="Welcome to my personal landing page! I am a Software Developer and Communications and Signal Processing engineer. I hold a MSc in Communications and Signal Processing from Imperial College London, and a Diplôme d'Ingénieur in Electronics and Signal Processing from ENSEEIHT.">
+		<meta name="description" content="Software Developer, Digital Designer and Embedded Systems Engineer. MSc in Communications and Signal Processing from Imperial College London, Diplôme d'Ingénieur from ENSEEIHT.">
 		<meta name="keywords" content="Software Developer, Communications and Signal Processing engineer, resume, side projects, Github repositories, open source, MSc, Communications and Signal Processing, Imperial College London, Merit, Diplôme d'Ingénieur, Electronics and Signal Processing, ENSEEIHT, Image and Signal Processing, Communication Theory, Traffic Theory, Network and Web Security, Machine Learning, Computer Vision, Analogue and Digital Electronics, Computer Sciences, Microwave Engineering">
 		<meta name="language" content="English">
 		<meta name="author" content="Maxime Bories">
 
-		<!-- Technical Standards Tags -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta charset="UTF-8">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta http-equiv="Pragma" content="no-cache" />
-		<meta http-equiv="Expires" content="0" />
-
-		<!-- Technical Security Tags -->
-		<meta name="cookies" content="no">
+		<!-- Security -->
 		<meta name="referrer" content="no-referrer">
-		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fpjscdn.net https://metrics.maximebories.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self';">
-		<meta http-equiv="Content-Security-Policy: default-src " self"; frame-ancestors "none">
-		<meta http-equiv="Public-Key-Pins" content="pin-sha256='base64-encoded-public-key'; pin-sha256='base64-encoded-backup-public-key'; max-age=604800; includeSubDomains">
 		<meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
 		<meta http-equiv="X-Content-Type-Options" content="nosniff">
-		<meta http-equiv="X-Frame-Options" content="deny">
 		<meta http-equiv="X-XSS-Protection" content="1; mode=block">
 
-		<!-- Open Graph / Facebook Tags -->
+		<!-- Open Graph -->
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://maximebories.com/">
 		<meta property="og:title" content="Maxime's Spot - Maxime Bories">
-		<meta property="og:description" content="One of a kind landing page...">
+		<meta property="og:description" content="Software Developer · Digital Designer &amp; Embedded Systems Engineer">
 		<meta property="og:image" content="https://maximebories.com/img/preview.png">
 
-		<!-- Twitter Tags -->
+		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image">
 		<meta property="twitter:url" content="https://maximebories.com/">
 		<meta property="twitter:title" content="Maxime's Spot - Maxime Bories">
-		<meta property="twitter:description" content="One of a kind landing page...">
+		<meta property="twitter:description" content="Software Developer · Digital Designer &amp; Embedded Systems Engineer">
 		<meta property="twitter:image" content="https://maximebories.com/img/preview.png">
 
 		<!-- Fingerprinting -->
@@ -49,15 +57,13 @@
 			fpPromise.then(fpAgent => fpAgent.get());
 		</script>
 
+		<!-- Fonts -->
+		<link rel="preload" href="./fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+
 		<!-- CSS -->
 		<link href="./css/style.css" rel="stylesheet">
-		<link href="./css/timeline.css" rel="stylesheet">
-		<link href="./css/arrow.css" rel="stylesheet">
 
-		<!-- include the Animate.css library -->
-		<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"> -->
-
-		<!-- Classic Favicons and Theming -->
+		<!-- Favicons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
@@ -66,177 +72,178 @@
 		<link rel="shortcut icon" href="ico/favicon.ico">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="msapplication-config" content="ico/browserconfig.xml">
-		<meta name="theme-color" content="#9aadfd">
-
-		<!-- Favicons for Android -->
-		<link rel="icon" sizes="36x36" href="ico/favicon-36x36.png">
-		<link rel="icon" sizes="48x48" href="ico/favicon-48x48.png">
-		<link rel="icon" sizes="72x72" href="ico/favicon-72x72.png">
+		<meta name="theme-color" content="#11111b">
 		<link rel="icon" sizes="96x96" href="ico/favicon-96x96.png">
-		<link rel="icon" sizes="144x144" href="ico/favicon-144x144.png">
 		<link rel="icon" sizes="192x192" href="ico/favicon-192x192.png">
 		<link rel="icon" sizes="256x256" href="ico/favicon-256x256.png">
 		<link rel="icon" sizes="384x384" href="ico/favicon-384x384.png">
 		<link rel="icon" sizes="512x512" href="ico/favicon-512x512.png">
 		<link rel="icon" sizes="1024x1024" href="ico/favicon-1024x1024.png">
-
-		<!-- Favicons for iOS -->
-		<link rel="apple-touch-icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="ico/apple-touch-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="ico/apple-touch-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="ico/apple-touch-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="ico/apple-touch-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="ico/apple-touch-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon-180x180.png">
+		<!-- Structured data -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Maxime Bories",
+			"url": "https://maximebories.com",
+			"jobTitle": "Software Developer, Digital Designer & Embedded Systems Engineer",
+			"worksFor": {
+				"@type": "Organization",
+				"name": "Météorage"
+			},
+			"alumniOf": [
+				{
+					"@type": "CollegeOrUniversity",
+					"name": "Imperial College London"
+				},
+				{
+					"@type": "CollegeOrUniversity",
+					"name": "ENSEEIHT"
+				}
+			],
+			"sameAs": [
+				"https://github.com/maximebories"
+			]
+		}
+		</script>
 	</head>
 
 	<body>
-		<div id="root">
-			<div id="ico">
-				<a href="https://maximebories.com/">
-					<img src="./ico/ico.svg" alt="Maxime Bories">
-				</a>
-			</div>
-			<div class="section-vh bg-light-purple">
-				<div class="section-contents">
-					<div class="contents-centered">
-						<h2>Work in Progress</h2>
-						<p>An expression used to describe something that will be available shortly, in the near future. Nobody knows how long the near future will last, it's a mystery.</p>
+		<a href="#main" class="sr-only">Skip to content</a>
+
+		<main id="main">
+			<!-- Hero -->
+			<section class="hero">
+				<div class="container">
+					<div class="hero__top">
+						<h1>Maxime Bories</h1>
+						<nav aria-label="Site">
+							<button class="theme-toggle" type="button" aria-label="Toggle theme">
+								<svg class="icon-sun" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+								<svg class="icon-moon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+							</button>
+						</nav>
 					</div>
+					<p class="hero__subtitle">Software Developer &middot; Digital Designer &amp; Embedded Systems Engineer</p>
+					<p class="hero__intro">This is my spot in the World Wide Web &mdash; an introduction, a portfolio, a showcase of personal projects, and a sandbox for keeping up to date with WebOps technologies.</p>
 				</div>
-				<a class="container-arrow scroll-to" href="#cards">
-					<span>
-						<i class="arrow down" aria-hidden="false"></i> </span>
-				</a>
-			</div>
-			<div class="bg-light-blue section-vh">
-				<div class="section-contents">
-					<div class="contents-centered">
-						<h2>Nice to meet you</h2>
-						<p>This is my spot in the World Wide Web, an introduction, a portfolio, a blog, a showcase of personnal projects and a sandbox for testing and keeping up to date with  WebOps technologies.</p>
-					</div>
-				</div>
-			</div>
-			<div class="bg-light-green section">
-				<div id="curiculum">
-					<h2>Work Experience</h2>
-					<ul class='timeline'>
-						<li class='work'>
-							<div>
-								<div class='title'>Algorithm Development and Validation at Thales Alenia Space</div>
-								<div class='date'>2016 → Today</div>
-								<div class='circle'></div>
-							</div>
-							<div class='description'>
-								<p>
-									Review, Coding, Simulation and Testing of various modulation and coding schemes for TT&C Secure Receiver and Emitters: FSK, PSK, Frequency-Hopping Spread pectrum, Time-Frequency Estimation, Adaptive Throughput, Transmission Security, Synchronisation, Beacon and Ranging.
-								</p>
-							</div>
-						</li>
-						<li class='work'>
-							<div>
-								<div class='title'>Software Developer Intern at LIRYC (view <a href="https://maximebories.com/Liryc.pdf" target="_blank" rel="noopener noreferrer">abstract</a>)</div>
-								<div class='date'>Summer 2014</div>
-								<div class='circle'></div>
-							</div>
-							<div class='description'>
-								<p>Development of a software interface for an intra-MRI electrical positioning system at the Electrophysiology and Heart Modeling Institute of Bordeaux.
-								</p>
-							</div>
-						</li>
-					</ul>
-					<h2>Academic Projects</h2>
+			</section>
+
+			<!-- Work Experience -->
+			<section id="experience">
+				<div class="container">
+					<p class="section-label">Work Experience</p>
+					<h2>Career</h2>
 					<ul class="timeline">
-						<li class='work'>
-							<div>
-								<div class='title'>MSc Thesis at Imperial College London (view <a href="https://maximebories.com/MSc_Thesis_Underwater_Vision.pdf" target="_blank" rel="noopener noreferrer">thesis</a>)</div>
-								<div class='date'>End of 2015</div>
-								<div class='circle'></div>
-							</div>
-							<div class='description'>
-								<p>
-									Underwater images restoration using a physics-based approach to counter the effects of attenuation and scattering in murky water.
-								</p>
-							</div>
+						<li class="timeline__item">
+							<p class="timeline__date">2025 &rarr; Today</p>
+							<h3 class="timeline__title">Lightning Location System Sensor Design</h3>
+							<p class="timeline__org">M&eacute;t&eacute;orage</p>
+							<p class="timeline__desc">Designing a from-scratch Lightning Location System (LLS) sensor prototype focused on ultra-precise time-of-arrival measurements. The core is a GNSS-disciplined timing and FPGA-based digital chain, ensuring deterministic clocks, counters, and data paths from acquisition to timestamping. Delivering a research-grade sensor enabling nanosecond-level timestamp accuracy from raw samples to lightning onset detection, with a complete end-to-end acquisition and control pipeline.</p>
 						</li>
-						<li class='work'>
-							<div>
-								<div class='title'>Second Year Research Project at ENSEEIHT</div>
-								<div class='date'>End of 2014</div>
-								<div class='circle'></div>
-							</div>
-							<div class='description'>
-								<p>
-									Image preprocessing (e.g. Wavelet Transform) change detection in multivariate statistical analysis (clusters detection) between infrared, optical and SAR atellites images.
-								</p>
-							</div>
+						<li class="timeline__item">
+							<p class="timeline__date">2016 &rarr; 2023</p>
+							<h3 class="timeline__title">Algorithm Development and Validation</h3>
+							<p class="timeline__org">Thales Alenia Space</p>
+							<p class="timeline__desc">Developed and validated DSP algorithms for military-grade TT&amp;C receivers and emitters onboard space satellites. From FSK/PSK modulation and frequency-hopping spread spectrum to synchronisation chains and secure transmission protocols, I carried the full lifecycle &mdash; design, simulation, coding, and testing &mdash; of custom modem models built to fly.</p>
+						</li>
+						<li class="timeline__item">
+							<p class="timeline__date">Summer 2014</p>
+							<h3 class="timeline__title"><a href="https://maximebories.com/Liryc.pdf" target="_blank" rel="noopener noreferrer"><svg class="icon-inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg> Software Developer Intern</a></h3>
+							<p class="timeline__org">LIRYC &mdash; Electrophysiology and Heart Modeling Institute of Bordeaux</p>
+							<p class="timeline__desc">Built the real-time software interface for an MRI-compatible 3D catheter localization system used in cardiac electrophysiology. Skin-surface electrode pairs induce oscillating electrical fields; voltage samples from the catheter tip are digitized and resolved via Fourier decomposition into live 3D coordinates. The Matlab-based interface handles calibration, acquisition, and real-time visualization &mdash; validated in vitro and in vivo, independent of MR scanning sequences.</p>
 						</li>
 					</ul>
-					<h2>Education</h2>
+				</div>
+			</section>
+
+			<!-- Academic Projects -->
+			<section id="projects">
+				<div class="container">
+					<p class="section-label">Academic Projects</p>
+					<h2>Research</h2>
 					<ul class="timeline">
-						<li class='work'>
-							<div>
-								<div class='title'>Imperial College London</div>
-								<div class='date'>2014 → 2015</div>
-								<div class='circle'></div>
-							</div>
-							<div class='description'>
-								<p>
-									MSc in Communications and Signal Processing, Merit<br>
-									Main courses include Image and Signal Processing, Communication Theory, Traffic Theory, Network and Web Security, Machine Learning and Computer Vision.
-								</p>
-							</div>
+						<li class="timeline__item timeline__item--accent">
+							<p class="timeline__date">End of 2015</p>
+							<h3 class="timeline__title"><a href="https://maximebories.com/MSc_Thesis_Underwater_Vision.pdf" target="_blank" rel="noopener noreferrer"><svg class="icon-inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg> MSc Thesis &mdash; Underwater Vision</a></h3>
+							<p class="timeline__org">Imperial College London</p>
+							<p class="timeline__desc">Underwater cameras suffer from murky water &mdash; light gets absorbed and scattered, leaving images with low contrast, colour distortion, and near-field lighting artefacts. I explored ways to undo that damage in software, starting with classical image processing and moving to a physics-based model that estimates scene radiance and albedo to restore visibility in artificially lit underwater scenes.</p>
 						</li>
-						<li class='work'>
-							<div>
-								<div class='title'>ENSEEIHT</div>
-								<div class='date'>2012 → 2015</div>
-								<div class='circle'></div>
-							</div>
-							<div class='description'>
-								<p>
-									Diplôme d'Ingénieur, Electronics and Signal Processing<br>
-									Main courses include Image and Signal Processing, Analogue and Digital Electronics, Computer Sciences and Microwave Engineering.
-								</p>
-							</div>
-						</li>
-						<li class='work'>
-							<div>
-								<div class='title'>Lycée Pierre de Fermat</div>
-								<div class='date'>2010 → 2012</div>
-								<div class='circle'></div>
-							</div>
-							<div class='description'>
-								<p>
-									Two-year intensive undergraduate course in Mathematics, Physics and Engineering Sciences.
-							</div>
+						<li class="timeline__item timeline__item--accent">
+							<p class="timeline__date">End of 2014</p>
+							<h3 class="timeline__title">Second Year Research Project</h3>
+							<p class="timeline__org">ENSEEIHT</p>
+							<p class="timeline__desc">Detecting changes across multi-sensor satellite imagery &mdash; infrared, optical, and SAR. Applied wavelet-based preprocessing and multivariate statistical analysis to identify clusters of change between acquisitions.</p>
 						</li>
 					</ul>
 				</div>
-				<div id="download">
-					<a href="https://maximebories.com/cv_maxime_bories_2023.pdf" target="_blank" rel="noopener noreferrer">
-						<img src="./img/download.png" alt="Curiculum Vitae Download">
-					</a>
+			</section>
+
+			<!-- Education -->
+			<section id="education">
+				<div class="container">
+					<p class="section-label">Education</p>
+					<h2>Studies</h2>
+					<ul class="timeline">
+						<li class="timeline__item timeline__item--green">
+							<p class="timeline__date">2014 &rarr; 2015</p>
+							<h3 class="timeline__title">Imperial College London</h3>
+							<p class="timeline__desc">MSc in Communications and Signal Processing, Merit. Studied how signals carry information and how machines interpret what they see &mdash; from communication theory and traffic modelling to image processing, machine learning, and computer vision, with a grounding in network and web security.</p>
+						</li>
+						<li class="timeline__item timeline__item--green">
+							<p class="timeline__date">2012 &rarr; 2015</p>
+							<h3 class="timeline__title">ENSEEIHT</h3>
+							<p class="timeline__desc">Dipl&ocirc;me d&rsquo;Ing&eacute;nieur in Electronics and Signal Processing. A broad engineering curriculum spanning analogue and digital electronics, signal and image processing, computer science, and microwave engineering &mdash; bridging the gap between physics and software.</p>
+						</li>
+						<li class="timeline__item timeline__item--green">
+							<p class="timeline__date">2010 &rarr; 2012</p>
+							<h3 class="timeline__title">Lycée Pierre de Fermat</h3>
+							<p class="timeline__desc">Two-year intensive preparatory programme in mathematics, physics, and engineering sciences &mdash; the traditional French gateway to grandes &eacute;coles.</p>
+						</li>
+					</ul>
 				</div>
-			</div>
-			<div class="bg-light-yellow section-vh">
-				<div class="section-contents">
-					<div class="contents-centered">
-						<h2>Latest Projects</h2>
-						<p>Parallelism is an everyday struggle... In the meantime feel free to follow me on <a href="https://github.com/maximebories" target="_blank" rel="noopener noreferrer">Github</a>.</p>
+			</section>
+
+			<!-- Links -->
+			<section id="links">
+				<div class="container">
+					<p class="section-label">Get in Touch</p>
+					<h2>Links</h2>
+					<div class="links-section">
+						<a class="link-card" href="https://maximebories.com/cv_maxime_bories_2023.pdf" target="_blank" rel="noopener noreferrer">
+							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+							Download CV
+						</a>
+						<a class="link-card" href="https://github.com/maximebories" target="_blank" rel="noopener noreferrer">
+							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+							GitHub
+						</a>
 					</div>
 				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="site-footer">
+			<div class="container">
+				<ul class="footer-links">
+					<li><a href="https://github.com/maximebories/maximebories.github.io" target="_blank" rel="noopener noreferrer">Source</a></li>
+					<li><a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" rel="noopener noreferrer">GPL v3.0</a></li>
+					<li><a href="https://fsf.org" target="_blank" rel="noopener noreferrer">Free Software Foundation</a></li>
+				</ul>
+				<p>Copyleft &mdash; source code available on GitHub, licensed under the GNU General Public License v3.0.</p>
+				<p>Themed with <a href="https://github.com/catppuccin/catppuccin" target="_blank" rel="noopener noreferrer">Catppuccin</a>.</p>
 			</div>
-			<div class="section-vh bg-light-purple">
-				<div class="section-contents">
-					<div class="contents-centered">
-						<h2>Copyleft</h2>
-						<p>Source code available on <a href="https://github.com/maximebories/maximebories.github.io" target="_blank" rel="noopener noreferrer">GitHub</a>. Licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" rel="noopener noreferrer">GNU General Public License v3.0</a> as published by the <a href="https://fsf.org" target="_blank" rel="noopener noreferrer">Free Softwaren Foundation.</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
+		</footer>
+
+		<!-- Theme toggle logic -->
+		<script>
+			document.querySelector('.theme-toggle').addEventListener('click', function() {
+				var current = document.documentElement.getAttribute('data-theme');
+				var next = current === 'dark' ? 'light' : 'dark';
+				document.documentElement.setAttribute('data-theme', next);
+				localStorage.setItem('theme', next);
+			});
+		</script>
 	</body>
 </html>
