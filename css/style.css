@@ -391,6 +391,85 @@ section:nth-of-type(odd) {
 	font-weight: 700;
 }
 
+/* --- Page header (secondary pages) -------------------------------- */
+
+.page-header {
+	padding: 2rem 0 1rem;
+	background-color: var(--ctp-mantle);
+}
+
+.back-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	font-size: 0.85rem;
+	color: var(--ctp-blue);
+	margin-bottom: 1rem;
+}
+
+.back-link:hover {
+	color: var(--ctp-lavender);
+}
+
+.page-header h1 {
+	font-size: 2rem;
+	margin-bottom: 0.25rem;
+}
+
+.page-header p {
+	color: var(--ctp-subtext0);
+	font-size: 0.95rem;
+}
+
+/* --- Recommendation cards ----------------------------------------- */
+
+.reco-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.reco-card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	padding: 1rem 1.25rem;
+	border: 1px solid var(--ctp-surface0);
+	border-radius: 8px;
+	color: var(--ctp-text);
+	text-decoration: none;
+	transition: border-color 0.2s, background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.reco-card:hover {
+	border-color: var(--ctp-surface2);
+	background-color: var(--ctp-surface0);
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.reco-card__name {
+	font-weight: 700;
+	font-size: 0.95rem;
+	display: flex;
+	align-items: center;
+	gap: 0.35rem;
+}
+
+.reco-card__name svg {
+	width: 14px;
+	height: 14px;
+	flex-shrink: 0;
+	opacity: 0.5;
+}
+
+.reco-card__desc {
+	font-size: 0.85rem;
+	color: var(--ctp-subtext1);
+	line-height: 1.4;
+}
+
 /* --- Animations --------------------------------------------------- */
 
 @keyframes fadeInUp {
