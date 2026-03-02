@@ -185,7 +185,7 @@ section + section {
 /* --- Hero --------------------------------------------------------- */
 
 .hero {
-	padding: 4rem 0 4rem;
+	padding: 6rem 0 4rem;
 	border-top: none;
 	background-color: var(--ctp-mantle);
 }
@@ -519,7 +519,11 @@ section:nth-of-type(odd) {
 /* Scroll-driven timeline reveal */
 
 @supports (animation-timeline: view()) {
-	.timeline__item {
+	.section-label,
+	section:not(.hero) h2,
+	.timeline__item,
+	.links-section,
+	.site-footer .container {
 		animation: fadeInUp 0.5s ease both;
 		animation-timeline: view();
 		animation-range: entry 0% entry 30%;
@@ -559,7 +563,7 @@ section:nth-of-type(odd) {
 	}
 
 	.hero {
-		padding: 3rem 0 3rem;
+		padding: 4rem 0 3rem;
 	}
 
 	.timeline {
